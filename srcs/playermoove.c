@@ -14,6 +14,7 @@
 
 void	ft_mooveleft(t_game *game)
 {
+	
 	if (game->map[game->player_position[1]]
 		[game->player_position[0] - 1] == '1')
 		return ;

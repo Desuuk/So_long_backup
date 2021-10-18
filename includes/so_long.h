@@ -63,7 +63,7 @@ void	ft_mooveup(t_game *game);
 void	ft_exit_game(t_game *game);
 void	ft_free_tab(char **str);
 int		ft_is_map_closed(t_game *game, int j);
-void	ft_draw_to_map(t_game *game);
+int		ft_draw_to_map(t_game *game);
 int		ft_esc_press(t_game *game);
 
 #endif

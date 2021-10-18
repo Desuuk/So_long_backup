@@ -37,7 +37,7 @@ static void	ft_draw_cons(t_game *game, int i, int j)
 		game->mlx.txt[3], j * 16, i * 16);
 }
 
-void	ft_draw_to_map(t_game *game)
+int	ft_draw_to_map(t_game *game)
 {
 	int	i;
 	int	j;
@@ -62,4 +62,5 @@ void	ft_draw_to_map(t_game *game)
 			ft_draw_player(game);
 		}
 	}
+	return (1);
 }

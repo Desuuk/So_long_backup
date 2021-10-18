@@ -12,13 +12,13 @@
 
 #include "../includes/so_long.h"
 
-static void	ft_player_settings(t_game *game, int i, int j)
+static int	ft_player_settings(t_game *game, int i, int j)
 {
 	int	doublon;
 
-	doublon++;
-	game->player_position[0] = i;
-	game->player_position[1] = j;
+	doublon = 1;
+	game->player_position[0] = j;
+	game->player_position[1] = i;
 	game->map[i][j] = '0';
 	return (doublon);
 }
@@ -76,7 +76,7 @@ int	ft_check_map(t_game *game, int i, int is_doublon_P, int is_doublon_E)
 			if (!ft_check_char(game->map[i][j]))
 				return (ft_error_map_checking(4));
 			else if (game->map[i][j] == 'P')
-				is_doublon_P += ft_player_setting(game, i, j);
+				is_doublon_P += ft_player_settings(game, i, j);
 			else if (game->map[i][j] == 'E')
 				is_doublon_E++;
 			else if (game->map[i][j] == 'C')

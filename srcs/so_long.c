@@ -49,6 +49,7 @@ int	main(int ac, char **av)
 	if (ac == 2)
 	{
 		ft_parse_map(&game, av, buff);
+		printf("%d\n // %d\n", game.player_position[0], game.player_position[1]);
 		if (!ft_mlx_game_init(&game))
 			return (0);
 	}
