@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mqueguin <mqueguin@student.42.fr>          +#+  +:+       +#+         #
+#    By: aloubar <aloubar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/06 19:06:05 by mqueguin          #+#    #+#              #
-#    Updated: 2021/10/07 12:21:55 by mqueguin         ###   ########.fr        #
+#    Updated: 2021/10/18 16:00:07 by aloubar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,11 +16,11 @@ NAME_B          =       so_long_bonus
 
 SRCS            =       $(wildcard srcs/*.c)
 
-SRCS_B      =       $(wildcard bonus/srcs/*.c)
+SRCS_B      =       $(wildcard bonus/srcs_bonus/*.c)
 
 INCLUDES_DIR     =       includes/
 
-INCLUDES_DIR_B  =       bonus/includes/
+INCLUDES_DIR_B  =       bonus/includes_bonus/
 
 LIB_DIR         =       libft/
 

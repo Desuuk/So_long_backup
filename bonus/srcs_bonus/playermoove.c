@@ -6,11 +6,11 @@
 /*   By: aloubar <aloubar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 21:08:08 by aloubar           #+#    #+#             */
-/*   Updated: 2021/10/18 15:54:07 by aloubar          ###   ########.fr       */
+/*   Updated: 2021/10/19 12:56:26 by aloubar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../includes_bonus/so_long.h"
 
 void	ft_mooveleft(t_game *game)
 {
@@ -37,7 +37,6 @@ void	ft_mooveleft(t_game *game)
 	}
 	game->player_position[0] -= 1;
 	game->nbr_of_moov++;
-	printf("%d\n", game->nbr_of_moov);
 }
 
 void	ft_mooveright(t_game *game)
@@ -65,7 +64,6 @@ void	ft_mooveright(t_game *game)
 	}
 	game->player_position[0] += 1;
 	game->nbr_of_moov++;
-	printf("%d\n", game->nbr_of_moov);
 }
 
 void	ft_moovedown(t_game *game)
@@ -93,7 +91,6 @@ void	ft_moovedown(t_game *game)
 	}
 	game->player_position[1] += 1;
 	game->nbr_of_moov++;
-	printf("%d\n", game->nbr_of_moov);
 }
 
 void	ft_mooveup(t_game *game)
@@ -121,5 +118,4 @@ void	ft_mooveup(t_game *game)
 	}
 	game->player_position[1] -= 1;
 	game->nbr_of_moov++;
-	printf("%d\n", game->nbr_of_moov);
 }

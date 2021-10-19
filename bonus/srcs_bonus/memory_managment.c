@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   memory_managment.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aloubar <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aloubar <aloubar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 22:18:06 by aloubar           #+#    #+#             */
-/*   Updated: 2021/10/13 22:22:58 by aloubar          ###   ########.fr       */
+/*   Updated: 2021/10/18 16:58:06 by aloubar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/so_long.h"
+#include "../includes_bonus/so_long.h"
 
 void	ft_free_tab(char **str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
