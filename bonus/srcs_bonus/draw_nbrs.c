@@ -35,7 +35,7 @@ static int	ft_getsizeof_numbers(t_game *game)
 	return (size);
 }
 
-static void	ft_draw_numbers(t_game *game)
+void	ft_draw_numbers(t_game *game)
 {
 	int	tmp;
 	int	size;

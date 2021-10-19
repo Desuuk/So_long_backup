@@ -14,6 +14,7 @@
 
 void	ft_exit_game(t_game *game)
 {
+	printf("Total numbers of mooves : %d\n", game->nbr_of_moov);
 	ft_free(game);
 	exit(1);
 }
@@ -21,13 +22,6 @@ void	ft_exit_game(t_game *game)
 int	ft_esc_press(t_game *game)
 {
 	ft_exit_game(game);
-	exit(0);
 	return (1);
 }
 
-void	ft_exit_lost_game(t_game *game)
-{
-	printf("You lost! try again\n");
-	ft_free(game);
-	exit(0);
-}

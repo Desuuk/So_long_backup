@@ -12,13 +12,6 @@
 
 #include "../includes_bonus/so_long.h"
 
-static int	ft_esc_press(t_game *game)
-{
-	ft_exit_game(game);
-	exit(0);
-	return (1);
-}
-
 static int	ft_key_press(int keypressed, t_game *game)
 {	
 	if (keypressed == 97)
